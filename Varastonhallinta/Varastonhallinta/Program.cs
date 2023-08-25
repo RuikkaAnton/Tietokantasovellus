@@ -36,7 +36,5 @@ switch (vastaus)
 
     default:
         Console.WriteLine("Kirjoita uudestaan.");
-            break;
-
-            
+            break;    
 }

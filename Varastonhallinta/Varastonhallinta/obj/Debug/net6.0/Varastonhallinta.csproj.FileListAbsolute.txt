@@ -1,0 +1,15 @@
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\bin\Debug\net6.0\Varastonhallinta.exe
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\bin\Debug\net6.0\Varastonhallinta.deps.json
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\bin\Debug\net6.0\Varastonhallinta.runtimeconfig.json
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\bin\Debug\net6.0\Varastonhallinta.dll
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\bin\Debug\net6.0\Varastonhallinta.pdb
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.csproj.AssemblyReference.cache
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.AssemblyInfoInputs.cache
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.AssemblyInfo.cs
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.csproj.CoreCompileInputs.cache
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.dll
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\refint\Varastonhallinta.dll
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.pdb
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\Varastonhallinta.genruntimeconfig.cache
+C:\Users\s2101087\OneDrive - Business College Helsinki\Tiedostot\GitHub\SQL tietokanta tehtävä\Tietokantasovellus\Varastonhallinta\Varastonhallinta\obj\Debug\net6.0\ref\Varastonhallinta.dll

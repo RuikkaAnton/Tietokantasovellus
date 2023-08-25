@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\s2101087\\.nuget\\packages\\": {}
+    "C:\\Users\\s2101064\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s2101087\\OneDrive - Business College Helsinki\\Tiedostot\\GitHub\\SQL tietokanta tehtävä\\Tietokantasovellus\\Varastonhallinta\\Varastonhallinta\\Varastonhallinta.csproj",
+      "projectUniqueName": "C:\\Users\\s2101064\\OneDrive - Business College Helsinki\\Tieto- ja viestintätekniikan opinnot\\Teitokantasovellus teht\\Tietokantasovellus\\Varastonhallinta\\Varastonhallinta\\Varastonhallinta.csproj",
       "projectName": "Varastonhallinta",
-      "projectPath": "C:\\Users\\s2101087\\OneDrive - Business College Helsinki\\Tiedostot\\GitHub\\SQL tietokanta tehtävä\\Tietokantasovellus\\Varastonhallinta\\Varastonhallinta\\Varastonhallinta.csproj",
-      "packagesPath": "C:\\Users\\s2101087\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s2101087\\OneDrive - Business College Helsinki\\Tiedostot\\GitHub\\SQL tietokanta tehtävä\\Tietokantasovellus\\Varastonhallinta\\Varastonhallinta\\obj\\",
+      "projectPath": "C:\\Users\\s2101064\\OneDrive - Business College Helsinki\\Tieto- ja viestintätekniikan opinnot\\Teitokantasovellus teht\\Tietokantasovellus\\Varastonhallinta\\Varastonhallinta\\Varastonhallinta.csproj",
+      "packagesPath": "C:\\Users\\s2101064\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\s2101064\\OneDrive - Business College Helsinki\\Tieto- ja viestintätekniikan opinnot\\Teitokantasovellus teht\\Tietokantasovellus\\Varastonhallinta\\Varastonhallinta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\s2101087\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\s2101064\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

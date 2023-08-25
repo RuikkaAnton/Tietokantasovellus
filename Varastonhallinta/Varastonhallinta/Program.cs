@@ -6,6 +6,7 @@ Console.WriteLine("4 - Tulosta kaikki tuotteet");
 Console.WriteLine("5 - Muokkaa tuotenimeä");
 Console.WriteLine("0 - Lopeta sovellus");
 Console.Write("Valintasi on: ");
+Console.WriteLine("toimii");
 string? vastaus = Console.ReadLine();
 
 switch (vastaus) 

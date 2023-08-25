@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Varastonhallinta
 {
-    internal class Varastonhallinta
+    public class Varastonhallinta
     {
+
     }
 }

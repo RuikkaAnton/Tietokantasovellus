@@ -1,41 +1,64 @@
-﻿Console.WriteLine("VARASTONHALLINTA");
-Console.WriteLine("1 - Lisää tuote");
-Console.WriteLine("2 - Poista tuote");
-Console.WriteLine("3 - Tulosta eri tuotteiden määrät");
-Console.WriteLine("4 - Tulosta kaikki tuotteet");
-Console.WriteLine("5 - Muokkaa tuotenimeä");
-Console.WriteLine("0 - Lopeta sovellus");
-Console.Write("Valintasi on: ");
-Console.WriteLine("toimii");
-string? vastaus = Console.ReadLine();
+﻿using System.Runtime.CompilerServices;
+using Varastonhallinta;
 
-switch (vastaus) 
+bool correctAnswer = false;
+
+while (!correctAnswer)
 {
-    case "1":
-        // Lisää tuote
-        break;
+    Console.WriteLine("VARASTONHALLINTA");
+    Console.WriteLine("1 - Lisää tuote");
+    Console.WriteLine("2 - Poista tuote");
+    Console.WriteLine("3 - Tulosta eri tuotteiden määrät");
+    Console.WriteLine("4 - Tulosta kaikki tuotteet");
+    Console.WriteLine("5 - Muokkaa tuotenimeä");
+    Console.WriteLine("0 - Lopeta sovellus");
+    Console.Write("Valintasi on: ");
+    string? vastaus = Console.ReadLine();
 
-    case "2":
-        // Poista tuote
-        break;
+    switch (vastaus)
+    {
+        case "1":
+            // Lisää tuote
+            correctAnswer = true;
+            break;
 
-    case "3":
-        // Tulosta eri tuotteiden määrät
-        break;
+        case "2":
+            correctAnswer = true;
+            // Poista tuote
+            break;
 
-    case "4":
-        // Tulosta kaikki tuotteet
-        break;
+        case "3":
+            correctAnswer = true;
+            // Tulosta eri tuotteiden määrät
+            break;
 
-    case "5":
-        // Muokkaa tuotenimeä
-        break;
+        case "4":
+            correctAnswer = true;
+            // Tulosta kaikki tuotteet
+            break;
 
-    case "0":
-        // Lopeta sovellus
-        break;
+        case "5":
+            correctAnswer = true;
+            // Muokkaa tuotenimeä
+            break;
 
-    default:
-        Console.WriteLine("Kirjoita uudestaan.");
-            break;    
+        case "0":
+            correctAnswer = true;
+            Environment.Exit(0);
+            // Lopeta sovellus
+            break;
+
+        default:
+            Console.WriteLine("Väärä syöte!");
+            break;
+    }
+    if (correctAnswer)
+    {
+        break;
+    }
+}
+
+static void QueringItems()
+{
+
 }

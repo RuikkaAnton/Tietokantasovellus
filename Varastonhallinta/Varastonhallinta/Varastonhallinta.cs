@@ -16,7 +16,7 @@ namespace Varastonhallinta
             string connection = "Data Source=.;Initial Catalog=Varastonhallinta;User Id=sa;" + 
                 "Password=Salasana1;MultipleActiveResultSets=true;" + 
                 "TrustServerCertificate=true"; 
-            //optionsBuilder.UseSqlServer(connection);
+            optionsBuilder.UseSqlServer(connection);
         }
     }
 

@@ -14,7 +14,7 @@ namespace Varastonhallinta
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connection = "Data Source=.;Initial Catalog=Varastonhallinta;User Id=sa;" + 
-                "Password=Salasana1;MultipleActiveResultSets=true;" + 
+                "Password=WinterSoldier890;MultipleActiveResultSets=true;" + 
                 "TrustServerCertificate=true"; 
             optionsBuilder.UseSqlServer(connection);
         }

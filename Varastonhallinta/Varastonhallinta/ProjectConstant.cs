@@ -8,5 +8,6 @@ namespace Varastonhallinta
 {
     internal class Class1
     {
+        public const string DatabaseProvider = "SQLServer";
     }
 }

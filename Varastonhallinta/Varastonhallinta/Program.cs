@@ -1,12 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Update;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Update;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using Varastonhallinta;
 
-bool correctAnswer = false;
-
-while (!correctAnswer)
+while (true)
 {
     Console.WriteLine("VARASTONHALLINTA");
     Console.WriteLine("1 - Lisää tuote");
@@ -26,34 +25,29 @@ while (!correctAnswer)
             Console.Write("Tuotteen nimi: ");
             string vastausTuotenimi= ReadString();
             Console.Write("Tuotteen hinta euroina: ");
-            int vastausHinta = Convert.ToInt32(Console.ReadLine());
+            int vastausHinta = ReadNumber();
             Console.Write("Tuotteen varastosaldo: ");
-            int varastoVastaus = Convert.ToInt32(Console.ReadLine());
+            int varastoVastaus = ReadNumber();
             AddItems(vastausId, vastausTuotenimi, vastausHinta, varastoVastaus);
-            correctAnswer = false;
             break;
 
         case "2":
-            correctAnswer = true;
             Console.Write("Anna tuotteen Id minkä haluat poistaa: ");
             int poistaId = ReadNumber();
             DeleteItems(poistaId);
             break;
 
         case "3":
-            correctAnswer = true;
-            Console.Write("Anna tuotteen id, minkä nimeä haluat vaihtaa: ");
+            Console.Write("Anna tuotteen id, minkä määrän haluat tietää: ");
             int tuotteenSaldoId = ReadNumber();
             QueringItemAmountByName(tuotteenSaldoId);
             break;
 
         case "4":
-            correctAnswer = true;
             QueringItems();
             break;
 
         case "5":
-            correctAnswer = true;
             Console.Write("Anna tuotteen id, minkä nimeä haluat vaihtaa: ");
             int tuoteId = ReadNumber();
             Console.Write("Kirjoita uusi nimi tälle tuotteelle: ");
@@ -62,7 +56,6 @@ while (!correctAnswer)
             break;
 
         case "0":
-            correctAnswer = true;
             Environment.Exit(0);
             break;
 
@@ -110,10 +103,9 @@ static void QueringItems()
         return;
     }
 
-    else
+    foreach(Tuote tuote in allItems)
     {
-        Console.WriteLine("Kaikkien tietokannasta löytyvien tuotteiden tiedot: ");
-        Console.WriteLine(allItems);
+        Console.WriteLine($"Tuotteen Id on: {tuote.Id}, tuotteen nimi on: {tuote.Tuotenimi}, tuotteen hinta on: {tuote.Tuotteenhinta}, tuotteen varastosaldo on: {tuote.Varastosaldo}");
     }
 }
 
@@ -122,32 +114,43 @@ static void QueringItemAmountByName(int id)
     using Varastonhallinta.Varastonhallinta varastonhallinta = new();
     IQueryable<Tuote> itemByName = varastonhallinta.Tuotteet?.Where(tuote=> tuote.Id == id);
 
-    var finalData = itemByName?.ToList();
-
-    if(finalData.Count == 0)
+    if(itemByName is null)
     {
         Console.WriteLine($"Tuotetta, jonka id on {id} ei löydy tietokannasta");
         return;
     }
 
-    // Keskeneräinen
-    Console.WriteLine($"Tuotteen {id} määrä on: ");
+    foreach(Tuote tuote in itemByName)
+    {
+        Console.WriteLine($"Tuotteen jonka Id on {id} varastosaldo on {tuote.Varastosaldo}");
+    }
 }
 
 static bool AddItems(int uusiId, string uusiTuotenimi, int uusiTuotteenhinta, int uusiVarastosaldo)
 {
     using Varastonhallinta.Varastonhallinta varastonhallinta = new();
-    Tuote tuote = new()
-    {
-        Id = uusiId,
-        Tuotenimi = uusiTuotenimi,
-        Tuotteenhinta= uusiTuotteenhinta,
-        Varastosaldo = uusiVarastosaldo
-    };
+    Tuote itemId = varastonhallinta.Tuotteet.Find(uusiId);
 
-    varastonhallinta.Tuotteet?.Add(tuote);
-    int affected = varastonhallinta.SaveChanges();
-    return affected == 1;
+    if (itemId is null)
+    {
+            Tuote tuote = new()
+            {
+                Id = uusiId,
+                Tuotenimi = uusiTuotenimi,
+                Tuotteenhinta = uusiTuotteenhinta,
+                Varastosaldo = uusiVarastosaldo
+            };
+
+            varastonhallinta.Tuotteet?.Add(tuote);
+            int affected = varastonhallinta.SaveChanges();
+            return affected == 1;
+    }
+
+    else 
+    {
+        Console.WriteLine($"Tuote jonka Id on {uusiId} on jo olemassa, joten valitse uusi Id");
+        return false;
+    }
 }
 
 static int DeleteItems(int id)
